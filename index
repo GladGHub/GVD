@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G-STORE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>G-STORE</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="https://www.amazon.in/rts-Universal-Adapter-International-Worldwide/dp/B082WYMTWF?ref_=Oct_DLandingS_D_aef52836_0">Shop</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product">
+      <img src="https://m.media-amazon.com/images/I/71U--ouV28L._AC_UF1000,1000_QL80_.jpg" alt="Product 1">
+      <h2>Stationery</h2>
+      <p>Pen,Pencil,scale....</p>
+      <span class="price">Discount 10%</span>
+      <button>Add to Cart</button>
+    </section>
+
+    <section class="product">
+      <img src="https://images.meesho.com/images/products/120830527/geqnr_512.jpg" alt="Product 2">
+      <h2>Fancy</h2>
+      <p>Bangles,necklace,earrings...</p>
+      <span class="price">$29.99</span>
+      <button>Add to Cart</button>
+    </section>
+	<section class="product">
+      <img src="https://www.chrichmond.org/-/media/chrichmond-media/image/patient-resources---gift-shop---river-city2.ashx" alt="Product 2">
+      <h2>Gifts</h2>
+      <p>ball,Baloon,antique..</p>
+      <span class="price">$29.99</span>
+      <button>Add to Cart</button>
+    </section>
+	<section class="product">
+      <img src="https://kidsstoppress.com/wp-content/uploads/2021/09/1537190216.BestToyStoresInPune_KIDSSTOPPRESS.jpg" alt="Product 2">
+      <h2>Toys</h2>
+      <p>Teddybear,play car,bus ...</p>
+      <span class="price">$29.99</span>
+      <button>Add to Cart</button>
+    </section>
+	<section class="product">
+      <img src="product2.jpg" alt="Product 2">
+      <h2>Product 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <span class="price">$29.99</span>
+      <button>Add to Cart</button>
+    </section>
+
+    <!-- More product sections can be added here -->
+  </main>
+
+  <footer>
+    <p>&copy; 2023 G-Store. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
