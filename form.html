@@ -1,5 +1,4 @@
-
-        <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
     <title>GV Digitals</title>
@@ -62,12 +61,10 @@
         <option value="West Bengal">West Bengal</option>
         <!-- Add more states here -->
     </select>
-
     <label for="district">Select District:</label>
     <select id="district">
         <option value="" disabled selected>Select District</option>
     </select>
-
     <script>
         // Sample districts for the selected states (you can add more)
         const districts = {
@@ -97,10 +94,11 @@
                 option.selected = true;
                 districtSelect.add(option);
             }
-        }
+        } 
+    </script>
              <label for="Address">address:</label>
             <input type="text" id="address" name="address" required>
-    </script>
+   
             <input type="submit" value="Submit">
         </form>
     </div>
