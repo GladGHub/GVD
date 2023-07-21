@@ -46,7 +46,24 @@
     </section>
     <div class="container">
         <div class="header">
-            <h1>Awesome Ad Newsletter</h1>
+<style>
+        /* ... (Same CSS styles for ads as before) ... */
+        .ad-container {
+            display: none;
+        }
+        .ad-container.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Awesome Ad Slideshow</h1>
+        </div>
+
+        <!-- Slideshow Container -->
         <div class="slideshow-container">
             <!-- First Ad -->
             <div class="ad-container active">
