@@ -6,6 +6,9 @@ body {
   background-color: #fb9b98;
 }
 header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
   background-color: #3fca22;
   color: #ffbc3d;
   padding: 1rem;
