@@ -28,4 +28,12 @@
                 districtSelect.add(option);
             }
         } 
+document.addEventListener('DOMContentLoaded', function() 
+                          {
+  const animatedBoy = document.getElementById('animated-boy');
+  animatedBoy.style.animation = 'none'; // Disable the animation initially
+  setTimeout(() => {
+    animatedBoy.style.animation = ''; // Enable the animation after a short delay
+  }, 1000);
+});
     </script>
