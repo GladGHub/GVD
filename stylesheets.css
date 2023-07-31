@@ -109,3 +109,9 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+ .ad-container {
+  display: none;
+        }
+  .ad-container.active {
+  display: block;
+        }
