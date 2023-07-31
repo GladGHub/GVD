@@ -37,3 +37,47 @@ document.addEventListener('DOMContentLoaded', function()
   }, 1000);
 });
     </script>
+
+<script>
+        let slideIndex = 1;
+        showSlide(slideIndex);
+
+        function showSlide(n) {
+            const slides = document.getElementsByClassName('ad-container');
+            const dots = document.getElementsByClassName('dot');
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active');
+            }
+
+            slides[slideIndex - 1].classList.add('active');
+            dots[slideIndex - 1].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(slideIndex += 1);
+        }
+
+        function previousSlide() {
+            showSlide(slideIndex -= 1);
+        }
+
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+
+        setInterval(() => {
+            nextSlide();
+        }, 5000); // Change slide every 5 seconds
+    </script>
