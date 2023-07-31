@@ -32,7 +32,7 @@ body {
 .tour-guide {
   width: 100px;
   height: 150px;
-  background-image: url('https://static.vecteezy.com/system/resources/previews/006/634/891/original/cartoon-a-boy-waving-hand-free-vector.jpg'); /* Replace with the image of the animated boy */
+  background-image: url('boy.jpg'); /* Replace with the image of the animated boy */
   background-size: cover;
   position: absolute;
   bottom: 0;
