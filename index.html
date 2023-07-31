@@ -183,6 +183,15 @@
 
     <!-- More product sections can be added here -->
   </main>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+  const animatedBoy = document.getElementById('animated-boy');
+  animatedBoy.style.animation = 'none'; // Disable the animation initially
+  setTimeout(() => {
+    animatedBoy.style.animation = ''; // Enable the animation after a short delay
+  }, 1000);
+});
+</script>
 
   <footer>
     <p>&copy; 2023 G-Store. All rights reserved.</p>
