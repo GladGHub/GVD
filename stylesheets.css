@@ -32,7 +32,7 @@ body {
 .tour-guide {
   width: 100px;
   height: 150px;
-  background-image: url('boy.jpg'); /* Replace with the image of the animated boy */
+  background-image: url('boy.png'); /* Replace with the image of the animated boy */
   background-size: cover;
   position: absolute;
   bottom: 0;
