@@ -64,12 +64,12 @@ main {
 .product {
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 1rem;
-  margin: 1rem;
+  padding: ;
+  margin: ;
   max-width: 1600px;
-  height: 60px;
-  margin: 5px;
-  width: 30px;
+  height: ;
+  margin: ;
+  width: ;
 }
 .product img {
   max-width: 100%;
