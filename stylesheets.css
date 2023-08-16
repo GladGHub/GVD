@@ -73,17 +73,17 @@ main {
   padding: ;
   margin: ;
   max-width: 1600px;
-  height: ;
+  height: 110px;
   margin: ;
-  width: ;
+  width: 110px;
 }
 .product img {
   max-width: 100%;
   border-radius: 8px;
   max-width: 1600px;
-  height: ;
+  height:100px;
   margin:;
-  width: ;
+  width: 100px;
 }
 .product h2 {
   margin: 1rem 0;
