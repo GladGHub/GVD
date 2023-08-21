@@ -38,7 +38,7 @@
   }
  .grid-item {
     background-color: #ddd;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
   }
     main {
@@ -49,8 +49,8 @@
     }
     .product {
       text-align: center;
-      margin: 20px;
-      padding: 10px;
+      margin: 10px;
+      padding: 5px;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
