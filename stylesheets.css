@@ -55,8 +55,8 @@
       border-radius: 5px;
     }
     .product img {
-      max-width: 100%;
-      height: auto;
+      width: 310px;
+      height:415px;
     }
     footer {
   background-color: #333;
