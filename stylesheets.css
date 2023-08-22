@@ -14,10 +14,11 @@
       text-align: center;
     }
     nav ul {
+         background-color: #800000;
       list-style: none;
       display: flex;
       justify-content: center;
-      padding: -10PX;
+      padding:;
     }
     nav ul li {
       margin: 0 15px;
