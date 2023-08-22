@@ -21,9 +21,11 @@
       padding:;
     }
     nav ul li {
+        background-color: #800000
       margin: 0 15px;
     }
     nav ul li a {
+        background-color: #800000
       color: #FFD700;
       text-decoration: none;
     }
