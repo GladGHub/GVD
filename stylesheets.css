@@ -17,7 +17,7 @@
       list-style: none;
       display: flex;
       justify-content: center;
-      padding: -10;
+      padding: -10PX;
     }
     nav ul li {
       margin: 0 15px;
