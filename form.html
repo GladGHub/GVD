@@ -115,9 +115,30 @@
                 option.selected = true;
                 districtSelect.add(option);
             }
+            <script>
+        document.getElementById("dataForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            fetch("https://formspree.io/f/xaygwdej" {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response from the server
+                console.log(data);
+                // You can display a success message, clear the form, etc.
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                // Handle any errors that occurred during the request
+            });
+        });
         }
     </script>
-</form>
     </div>
 </body>
 </html>
