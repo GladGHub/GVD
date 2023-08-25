@@ -16,8 +16,11 @@
             <input type="tel" id="mobile" name="mobile" required>
             <label for="Email">Email:</label>
             <input type="text" id="Email" name="Email" required>
-             <label for="State">State:</label>
-             <select id="state" onchange="populateDistricts()">
+            <table>
+                <tr>
+                    <td>Select State:</td>
+                    <td>                                                                                           <!--<label for="State">State:</label> -->
+             <select id="state" onchange="populateDistricts()">1
                <option value="disabled selected">Select State</option>
                <option value="Andhra Pradesh">Andhra Pradesh</option>
                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -55,10 +58,15 @@
                <option value="Uttar Pradesh">Uttar Pradesh</option>
                <option value="Uttarakhand">Uttarakhand</option>
                <option value="West Bengal">West Bengal</option>
+               </select>
+                    </td>
+                </tr>
+                <tr>
          </select>
             </label>
         <label>
-           <label for="district">Select District:</label> 
+         <td>Select District:</td>
+                    <td>                                                                                                    <!--<label for="district">Select District:</label> -->
              <select id="district">
                <option value="" disabled selected>Select District</option>
              </select>
@@ -66,6 +74,10 @@
         <label for="address">Address:</label>
               <textarea id="address" name="address" rows="3" required></textarea>
                    <input type="submit" value="Submit">
+              </td>
+                </tr>
+                <!-- Other form fields here -->
+          </table>
     </form>
        <script> 
            const districts = {
