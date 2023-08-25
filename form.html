@@ -9,7 +9,7 @@
 <body>
     <div class="form-container">
         <h1>Drop here</h1>
-    <form action="https://formspree.io/f/xaygwdej"method="POST">
+      <form id="myForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="mobile">Mobile Number:</label>
@@ -133,6 +133,43 @@
             }
         }
        </script>
+      }
+    </form>
+      <script>
+            // JavaScript code here
+            const myForm = document.getElementById("myForm");
+            myForm.addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent default form submission
+
+                // Collect form data
+                const formData = new FormData(myForm);
+
+                // Convert FormData to JSON object
+                const formDataJson = {};
+                formData.forEach((value, key) => {
+                    formDataJson[key] = value;
+                });
+
+                // Send  data using Fetch API
+                fetch("https://formspree.io/f/xaygwdej", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(formDataJson)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Handle success or error
+                    console.log(data);
+                    // You can add further actions here, like showing a success message to the user
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    // Handle error, show an error message to the user, etc.
+                });
+            });
+        </script>
     </div>
 </body>
 </html>
