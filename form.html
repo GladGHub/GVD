@@ -16,7 +16,8 @@
             <input type="tel" id="mobile" name="mobile" required>
             <label for="Email">Email:</label>
             <input type="text" id="Email" name="Email" required>
-            <label for="state">Select State:</label>
+            <label>
+                <label for="state">Select State:</label>
              <select id="state" onchange="populateDistricts()">
                <option value="disabled selected">Select State</option>
                <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -56,10 +57,13 @@
                <option value="Uttarakhand">Uttarakhand</option>
                <option value="West Bengal">West Bengal</option>
          </select>
+            </label>
+        <label>
            <label for="district">Select District:</label> 
              <select id="district">
                <option value="" disabled selected>Select District</option>
              </select>
+        </label>
         <label for="address">Address:</label>
               <textarea id="address" name="address" rows="3" required></textarea>
                    <input type="submit" value="Submit">
