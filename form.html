@@ -136,25 +136,6 @@
        <label for="File">fileupload:</label>
       <input type="file" name="fileUpload">
     </form>
-      <script>
-            // JavaScript code here
-            const myForm = document.getElementById("myForm");
-            myForm.addEventListener("submit", function(event) {
-                event.preventDefault(); // Prevent default form submission
-
-                // Collect form data
-                const formData = new FormData(myForm);
-
-                // Convert FormData to JSON object
-                const formDataJson = {};
-                formData.forEach((value, key) => {
-                    formDataJson[key] = value;
-                });
-
-                // Send  data using Fetch AP
-    });
-</script>
-
     </div>
 </body>
 </html>
