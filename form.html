@@ -8,7 +8,7 @@
 <body>
     <div class="form-container">
         <h1>Drop here</h1>
-   <form action="https://fabform.io/f/D-ORItb" 
+   <form action="https://formspree.io/f/xaygwdej" 
             method="POST"
             enctype="multipart/form-data">
             <label for="name">Name:</label>
@@ -17,10 +17,13 @@
             <input type="tel" id="mobile" name="mobile" required>
             <label for="Email">Email:</label>
             <input type="text" id="Email" name="Email" required>
-            <table>
-                <tr>
-                    <td>Select State:</td>
-                    <td>                                                                                           <!--<label for="State">State:</label> -->
+            <label for="selectField">Select a state:</label>
+    <select id="selectField" onchange="updateLabel()">
+</select>
+    <br>
+    <label id="selectedLabel">Selected value will be displayed here.</label>
+
+                                                                         <!--<label for="State">State:</label> -->
              <select id="state" onchange="populateDistricts()">1
                <option value="disabled selected">Select State</option>
                <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -84,6 +87,21 @@
         <img id="image-preview" src="#" alt="Image Preview" style="max-width: 300px; max-height: 300px;"><br><br>
          <input type="submit" value="Submit">
     </form>
+      <script>
+        function updateLabel() {
+            // Get the select element by its ID
+            var selectElement = document.getElementById("selectField");
+            
+            // Get the selected option
+            var selectedOption = selectElement.options[selectElement.selectedIndex];
+            
+            // Get the label element by its ID
+            var labelElement = document.getElementById("selectedLabel");
+            
+            // Update the label text with the selected option's text
+            labelElement.textContent = "Selected state: " + selectedOption.text;
+        }
+    </script> 
        <script> 
            const districts = {
             "Andhra Pradesh": ["select","Anantapur", "Chittoor", "East Godavari", "Guntur", "Kadapa", "Krishna", "Kurnool", "Nellore", "Prakasam", "Srikakulam", "Visakhapatnam", "Vizianagaram", "West Godavari"],
