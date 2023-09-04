@@ -1,15 +1,69 @@
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .service {
-     color: gold;
-     background: green; 
-    border: 1px solid #ccc;
-    padding: 20px;
+/* Customized CSS */
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif; /* Changed the font family */
+    background-color: #f5f5f5; /* Lighter background color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 300px; /* Increased the maximum width */
+    margin: 40px auto; /* Adjusted the margin */
+    background-color: #ffffff;
+    border: 2px solid #ccc; /* Made the border slightly thicker */
+    border-radius: 10px; /* Rounded the corners more */
+    padding: 30px; /* Increased padding */
+}
+
+.header {
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+}
+
+.header h1 {
+    color: #4a90e2; /* Changed header text color */
+    font-size: 24px; /* Increased header text size */
+}
+
+.ad-image {
+    width: 100%;
+    max-height: 300px; /* Increased the maximum image height */
+    border-radius: 10px;
+}
+
+.ad-content {
+    margin-top: 30px; /* Increased the margin */
+}
+
+.ad-content p {
+    color: #666666; /* Adjusted text color */
+    line-height: 1.6; /* Adjusted line height */
+}
+
+.call-to-action {
+    text-align: center;
+    margin-top: 40px; /* Increased the margin */
+}
+
+.call-to-action a {
+    display: inline-block;
+    background-color: #28a745; /* Changed the call-to-action button color */
+    color: #fff;
+    padding: 12px 24px; /* Adjusted button padding */
+    border-radius: 8px; /* Rounded the button corners */
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.call-to-action a:hover {
+    background-color: #218838; /* Hover color change */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px; /* Increased the margin */
+}
+
+.footer p {
+    color: #777777; /* Adjusted footer text color */
+}
