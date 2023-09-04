@@ -87,10 +87,6 @@
                 </tr>
                 <!-- Other form fields here -->
           </table>
-         <label for="imageUpload">Select an image:</label>
-        <label for="file">File Upload:</label>
-        <input type="file" id="file" name="file" accept=".pdf, .doc, .docx,.jpg" required onchange="previewImage(event)"><br><br>
-        <img id="image-preview" src="#" alt="Image Preview" style="max-width: 300px; max-height: 300px;"><br><br>
          <input type="submit" value="Submit">
     </form>
       
@@ -147,23 +143,7 @@
                 districtSelect.add(option);
             }
         }
-       </script>
-      <script>
-        function previewImage(event) {
-            var fileInput = event.target;
-            var preview = document.getElementById('image-preview');
-            
-            var file = fileInput.files[0];
-            var reader = new FileReader();
-            
-            reader.onload = function(e) {
-                preview.src = e.target.result;
-            }
-            
-            reader.readAsDataURL(file);
-        }
-    </script>
-      
+       </script> 
     </div>
 </body>
 </html>
