@@ -17,8 +17,8 @@
             <input type="tel" id="mobile" name="mobile" required>
             <label for="Email">Email:</label>
             <input type="text" id="Email" name="Email" required>
-            <label for="selectField">Select a state:</label><br>
-                                                                      <!--<label for="State">State:</label> -->
+            <label for="selectField">Select a state:</label>
+                                                                   <!--<label for="State">State:</label> -->
              <select id="selectField" onchange="populateDistricts()">
                <option value="disabled selected">Select State</option>
                <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -66,19 +66,7 @@
                <option value="" disabled selected>Select District</option>
              </select>
         </label>
-        <label for="address">Address:</label>
-              <textarea id="address" name="address" rows="3" required></textarea>    
-              </td>
-                </tr>
-                <!-- Other form fields here -->
-          </table>
-         <label for="imageUpload">Select an image:</label>
-        <label for="file">File Upload:</label>
-        <input type="file" id="file" name="file" accept=".pdf, .doc, .docx,.jpg" required onchange="previewImage(event)"><br><br>
-        <img id="image-preview" src="#" alt="Image Preview" style="max-width: 300px; max-height: 300px;"><br><br>
-         <input type="submit" value="Submit">
-    </form>
-      <script>
+     <script>
         function updateLabel() {
             // Get the select element by its ID
             var selectElement = document.getElementById("selectField");
@@ -93,6 +81,19 @@
             labelElement.textContent = "Selected state: " + selectedOption.text;
         }
     </script> 
+        <label for="address">Address:</label>
+              <textarea id="address" name="address" rows="3" required></textarea>    
+              </td>
+                </tr>
+                <!-- Other form fields here -->
+          </table>
+         <label for="imageUpload">Select an image:</label>
+        <label for="file">File Upload:</label>
+        <input type="file" id="file" name="file" accept=".pdf, .doc, .docx,.jpg" required onchange="previewImage(event)"><br><br>
+        <img id="image-preview" src="#" alt="Image Preview" style="max-width: 300px; max-height: 300px;"><br><br>
+         <input type="submit" value="Submit">
+    </form>
+      
        <script> 
            const districts = {
             "Andhra Pradesh": ["select","Anantapur", "Chittoor", "East Godavari", "Guntur", "Kadapa", "Krishna", "Kurnool", "Nellore", "Prakasam", "Srikakulam", "Visakhapatnam", "Vizianagaram", "West Godavari"],
