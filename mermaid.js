@@ -1,0 +1,12 @@
+graph TD
+  A[Central Bank] -->|Monetary Policy| B(Economic Stability)
+  A -->|Banker to Government| C(Government)
+  A -->|Banker to Banks| D(Commercial Banks)
+  A -->|Currency Issuer| E(Public)
+  A -->|Financial Stability| F(Financial Institutions)
+  B -->|Interest Rates| G(Inflation Control)
+  B -->|Open Market Operations| H(Money Supply)
+  C -->|Government Deposits| I(Government Transactions)
+  D -->|Reserve Requirements| J(Reserves)
+  D -->|Lender of Last Resort| K(Liquidity Support)
+  F -->|Regulation| L(Financial System Stability)
