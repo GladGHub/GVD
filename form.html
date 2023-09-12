@@ -1,5 +1,5 @@
                                       
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <head>
     <title>GV Digitals</title>
@@ -17,7 +17,7 @@
             <label for="Email">Email:</label>
             <input type="text" id="Email" name="Email" required>
             <label for="selectField">Select a state:</label>
-                                                                   <!--<label for="State">State:</label> -->
+                                                                   <!--<label for="State">State:</label> 
              <select id="selectField" onchange="updateLabel()">
                <option value="disabled selected">Select State</option>
                <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -61,7 +61,7 @@
        <label id="selectedLabel">Selected value will be displayed here.</label>
         <label>
          <td>Select District:</td>
-                                                                                                                     <!--<label for="district">Select District:</label> -->
+                                                                                                                     <!--<label for="district">Select District:</label> --
              <select id="district">
                <option value="" disabled selected>Select District</option>
              </select>
@@ -85,7 +85,7 @@
               <textarea id="address" name="address" rows="3" required></textarea>    
               </td>
                 </tr>
-                <!-- Other form fields here -->
+                <!-- Other form fields here --
           </table>
          <input type="submit" value="Submit">
     </form>
@@ -145,5 +145,29 @@
         }
        </script> 
     </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Information Collection</title>
+</head>
+<body>
+    <h1>Enter Your Information</h1>
+    <form action="process.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="town">Town:</label>
+        <input type="text" id="town" name="town" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
